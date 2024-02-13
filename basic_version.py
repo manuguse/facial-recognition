@@ -11,7 +11,7 @@ def load_images(folder):
     images = {}
     print(f'{len(listdir(folder))} images found in the folder "{folder}"')
     for file in listdir(folder):
-        file_path = f'{folder_name}/{file}'
+        file_path = f'{folder}/{file}'
         img_encoding = encode_image(file_path)
         person_name = file.replace(".jpg", '').replace("_", ' ') # only works for .jpg files for now
         images[person_name] = img_encoding
