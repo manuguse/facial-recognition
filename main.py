@@ -19,9 +19,6 @@ def load_images(folder):
 count = 0
 images = load_images('images')
 camera = cv2.VideoCapture(0)
-found_person = False
-found_face = False
-rec_color = (0, 0, 255)
 items = []
 
 while True:
